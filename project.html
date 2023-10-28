@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: Arial;
+            border: border-box;
+        }
+
+        .navbar {
+            height: 60px;
+            background-color: #0f1111;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
+        .nav-logo {
+            height: 50px;
+            width: 100px;
+        }
+
+        .logo {
+            background-image: url("amazon-logo.png");
+            background-size: cover;
+            height: 50px;
+            height: 100%;
+        }
+
+        .border {
+            border: 1.5px solid transparent;
+        }
+
+        .border:hover {
+            border: 1.5px solid white;
+        }
+
+        .add-first {
+            color: #cccccc;
+            font-size: 0.85px;
+            margin-left: 15px;
+        }
+
+        .add-secound {
+            font-size: 1rem;
+            margin-left: 3px;
+        }
+
+        .add-icon {
+            display: flex;
+
+        }
+
+        .nav-search {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: pink;
+            width: 620px;
+            height: 40px;
+            border-radius: 4px;
+        }
+
+        .search-select {
+            background-color: pink;
+            width: 50px;
+            text-align: center;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border: none;
+
+        }
+
+        .search-input {
+            width: 100%;
+            font-size: 1rem;
+            border: none;
+
+        }
+
+        .search-icon {
+            width: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            background-color: #ffa600;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            color: #0f1111;
+        }
+
+        .nav-search:hover {
+            border: 2px solid orange;
+        }
+
+        .span {
+            font-size: 0.7px;
+
+        }
+
+        .nav-secound {
+            font-size: 0.85px;
+            font-weight: 700px;
+        }
+
+        .nav-cart i {
+            font-size: 40px;
+
+        }
+
+        .nav.cart {
+            font-size: 0.85;
+            font-size: 700px;
+        }
+
+        .panel {
+            height: 40px;
+            background-color: #222f3d;
+            display: flex;
+            color: white;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
+        .panel-ops p {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        .panel-ops {
+            width: 70%;
+            font-size: 0.85rem;
+        }
+
+        .panel-deals {
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        .hero-section {
+            width: 500px;
+
+        }
+
+        .shop-section {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #e2e7e6;
+        }
+
+        .box {
+            border: 2px solid black;
+            width: 24%;
+            height: 400px;
+            background-color: white;
+            padding: 20px 0px 15px;
+            margin-left: 11px;
+
+        }
+
+        .box1-img {
+            margin-right: 10px;
+            margin-left: 18px;
+
+        }
+
+        .box2-img {
+            margin-right: 10px;
+            margin-left: 18px;
+        }
+
+        .box3-img {
+            margin-right: 10px;
+            margin-left: 18px;
+
+        }
+
+        .box4-img {
+            margin-right: 10px;
+            margin-left: 18px;
+
+        }
+
+        .shop-section2 {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #e2e7e6;
+        }
+
+        .box {
+            border: 2px solid black;
+            width: 24%;
+            height: 400px;
+            background-color: white;
+            padding: 20px 0px 15px;
+            margin-left: 11px;
+
+        }
+
+        .box1-img {
+            margin-right: 10px;
+            margin-left: 18px;
+
+        }
+
+        .box2-img {
+            margin-right: 10px;
+            margin-left: 18px;
+        }
+
+        .box3-img {
+            margin-right: 10px;
+            margin-left: 18px;
+
+        }
+
+        .box4-img {
+            margin-right: 10px;
+            margin-left: 18px;
+
+        }
+
+        .shop-section3 {
+            display: flex;
+        }
+
+        .box {
+            border: 2px solid black;
+            width: 24%;
+            height: 400px;
+            background-color: white;
+            padding: 20px 0px 15px;
+            margin-left: 11px;
+
+        }
+
+        .box1-img {
+            margin-right: 10px;
+            margin-left: 18px;
+
+        }
+
+        .box2-img {
+            margin-right: 10px;
+            margin-left: 18px;
+        }
+
+        .box3-img {
+            margin-right: 10px;
+            margin-left: 18px;
+
+        }
+
+        .box4-img {
+            margin-right: 10px;
+            margin-left: 18px;
+        }
+
+        .footer {
+            margin-top: 15px;
+        }
+
+        .foot-penal1 {
+            background-color: #37475a;
+            color: white;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+
+        .foot-penal2 {
+            background-color: #222f3d;
+            color: white;
+            height: 300px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        ul {
+            margin-top: 20px;
+        }
+
+        ul a {
+            display: block;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            color: #dddddd;
+        }
+
+        .foot-penal3 {
+            background-color: #222f3d;
+            color: white;
+            border-top: 0.5px solid white;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .logo {
+            margin-left: 0%;
+        }
+        .foot-penal4{
+            background-color: #0f1111;
+            color: white;
+            height: 80px;
+            font-size: 0.7rem;
+            text-align: center;
+        }
+        .pages{
+            padding-top: 25px;
+        }
+        .copyright{
+            padding-top: 5px;
+        }
+    </style>
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body style="background-color: #e2e7e6;">
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo">
+                    <img src="https://www.shutterstock.com/image-vector/chattogram-bangladesh-april-24-2023-260nw-2292992631.jpg"
+                        alt="Girl in a jacket" width="80" height="50">
+
+                </div>
+            </div>
+            <div class="nav-address border">
+                <p>Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-secound">India</p>
+
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search">
+                    <option>All</option>
+                </select>
+                <input placeholder="search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-singin border">
+                <p><span>Hello,sign in</span></p>
+                <p class="nav-secound">Account & Lists</p>
+            </div>
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="nav-secound">& oder</p>
+            </div>
+            <div class="nav-cart border">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                cart
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-ops">
+                <p>Today's Deal</p>
+                <p> Castomer Service</p>
+                <p>Register</p>
+                <p>Gist Cards</p>
+                <p>Sell</p>
+            </div>
+            <div class="panel-deals">
+                <p>Shop deals in Delectrons</p>
+
+            </div>
+        </div>
+    </header>
+    <div class="hero-section">
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/PC_Header_event_UNREC_EN_V2.jpg"
+            alt="" height="200px" width="2000px" margin-left="11px" margin-right="11px">
+
+    </div>
+    <div class="shop-section">
+        <div class="box1 box">
+            <h3>Starting rs349 |Bestselling</h3>
+            <h3>headphone</h3>
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/GW/CC/Headphones_Desktop_Cat_Card_1x_1._SY304_CB575831742_.jpg"
+                alt="" width="90%" height="300px" class="box1-img">
+            <br><br>
+            <h5>see all offers</h5>
+        </div>
+        <div class="box2 box">
+            <h3>Uu to 40% off |Smartphones</h3>
+            <h3>that suit your budget</h3>
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Scroll/Camera/Topdeal/n/Desktop_CC._SY304_CB575822413_.jpg"
+                alt="" width="90%" height="300px" class="box2-img">
+            <br><br>
+            <h5>see all offers</h5>
+
+        </div>
+        <div class="box3 box">
+            <h3>Great India Festival | Shop all</h3>
+            <h3>deal</h3>
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/PC_CC_Event_1X_EN._SY304_CB576157745_.jpg"
+                alt="" width="90%" height="300px" class="box3-img">
+            <br><br>
+            <h5>see all offers</h5>
+
+        </div>
+        <div class="box4 box">
+            <h3>Up to 70% off |internatonal</h3>
+            <h3>brands</h3>
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/OOC/Gateway/diwali/1/2/Desktop._SY304_CB577245072_.jpg"
+                alt="" width="90%" height="300px" class="box4-img">
+            <br><br>
+            <h5>see all offers</h5>
+        </div>
+    </div>
+
+
+
+    <br><br>
+    <div class="shop-section2">
+        <div class="box1 box">
+            <h3>Starting rs349 |Bestselling</h3>
+            <h3>headphone</h3>
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/certified_refurbished/anjaga/Jupiter23/JupiterGWCampaigns/Desktop_CC379-small._SY304_CB577628525_.jpg"
+                alt="" width="90%" height="300px" class="box1-img">
+            <br><br>
+            <h5>see all offers</h5>
+        </div>
+        <div class="box2 box">
+            <h3>Uu to 40% off |Smartphones</h3>
+            <h3>that suit your budget</h3>
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/lshruthi/Jupiter/WTS/GW/BTF/Jupiter1_Desktop_CC_379X304._SY304_CB577228857_.jpg"
+                alt="" width="90%" height="300px" class="box2-img">
+            <br><br>
+            <h5>see all offers</h5>
+
+        </div>
+        <div class="box3 box">
+            <h3>Great India Festival | Shop all</h3>
+            <h3>deal</h3>
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/OOC/Gateway/diwali/1/2/Desktop._SY304_CB577245072_.jpg"
+                alt="" width="90%" height="300px" class="box3-img">
+            <br><br>
+            <h5>see all offers</h5>
+
+        </div>
+        <div class="box4 box">
+            <h3>Up to 70% off |internatonal</h3>
+            <h3>brands</h3>
+            <img src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/c0a3fdfc-8a4f-4b20-92ef-896499c05843.gif"
+                alt="" width="90%" height="300px" class="box4-img">
+            <br><br>
+            <h5>see all offers</h5>
+
+        </div>
+    </div>
+
+
+
+
+    <br><br>
+    <div class="shop-section3">
+        <div class="box1 box">
+
+            <img src="https://m.media-amazon.com/images/I/51gsa5seFVL._AC_UF226,226_FMjpg_.jpg" alt="" width="90%"
+                height="300px" class="box1-img">
+            <div style="flex-direction: row;display: flex;justify-content:space-around;">
+                <h5 style="color: white;background-color: hsl(318, 88%, 38%); width: 100px;">Up to 36% off</h5>
+                <h5 style="color: #f10e8f9e; width: 150px">Great Indian festiwal</h5>
+            </div>
+            <h4>Double Door Refs Starting 19990</h4>
+
+
+        </div>
+        <div class="box1 box">
+
+            <img src="https://m.media-amazon.com/images/I/41V4aNRci3L._AC_UF226,226_FMjpg_.jpg" alt="" width="90%"
+                height="300px" class="box2-img">
+            <h5>Deals on Samsung S23</h5>
+
+        </div>
+        <div class="box1 box">
+
+            <img src="https://m.media-amazon.com/images/I/91WB8QGL03L._AC_UF226,226_FMjpg_.jpg" alt="" width="90%"
+                height="300px" class="box3-img">
+            <h5>All Clothing: Levi's, BIBA, U.S.POLO ASSN.</h5>
+            <h5> and more</h5>
+
+
+        </div>
+        <div class="box1 box">
+            <img src="https://m.media-amazon.com/images/I/41fqcna8S5L._AC_SR400,600_AGcontrast_.jpg" alt="" width="90%"
+                height="300" class="box4-img">
+            <h5>Wild Stone Ultra Sensual Longh</h5>
+            <h5> Lasting Perfume Spray for Men,</h5>
+            <h5> 4.1 out of 5 stars 10,277</h5>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="foot-penal1">
+            Back to Top
+
+        </div>
+        <div class="foot-penal2">
+            <ul>
+
+                <p> Get to Know Us</p>
+                <a> About Us</a>
+                <a>Careers</a>
+                <a>Press Releases</a>
+                <a>Amazon Science</a>
+
+            </ul>
+            <ul>
+
+                <p> Get to Know Us</p>
+                <a> About Us</a>
+                <a>Careers</a>
+                <a>Press Releases</a>
+                <a>Amazon Science</a>
+
+            </ul>
+            <ul>
+
+                <p> Get to Know Us</p>
+                <a> About Us</a>
+                <a>Careers</a>
+                <a>Press Releases</a>
+                <a>Amazon Science</a>
+
+            </ul>
+
+            <ul>
+
+                <p> Get to Know Us</p>
+                <a> About Us</a>
+                <a>Careers</a>
+                <a>Press Releases</a>
+                <a>Amazon Science</a>
+
+            </ul>
+        </div>
+        <div class="foot-penal3">
+            <div class="logo">
+                <img src="https://www.shutterstock.com/image-vector/chattogram-bangladesh-april-24-2023-260nw-2292992631.jpg"
+                alt="Girl in a jacket" width="80" height="50">
+                    </div>
+                    </div>
+                    <div class="foot-penal4">
+                <div class="pages">
+                    <a> Conditions générales de vente</a>
+                    <a>Vos informations personnelles</a>
+                    <a>Cookies</a>
+                    <a>Annonces basées sur vos centres dintérêt</a>
+                         <div class="copyright">
+                    <a>© 1996-2023, Amazon.com Inc. ou ses affiliés</a>
+
+
+                </div>
+            </div>
+
+
+
+       
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+
+        .a {
+            text-align: center;
+            padding-top: 20px;
+            text-transform: uppercase;
+            font-family: prague;
+            letter-spacing: 3px;
+        }
+
+        .b {
+            line-height: 35px;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+            padding-right: 5px;
+            text-align: justify;
+        }
+
+        .img123 {
+            width: 80%;
+        }
+
+        .c {
+            background-image: url(https://www.firstfiddle.in/assets/images/outletbanner.png);
+            width: 100%;
+            height: 400px;
+        }
+
+        .d {
+            background-image: url(https://www.firstfiddle.in/assets/images/outletbanner.png);
+            width: 100%;
+            height: 400px;
+        }
+
+        footer {
+            background: #020306f0;
+            padding: 50px;
+            color: #fff;
+        }
+
+        .e {
+            background-color: #000;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            color: #fff;
+        }
+
+        .weblogo {
+            width: 65px;
+        }
+
+        .navbar {
+            background: #00000082 !important;
+        }
+
+        .navbar-nav li {
+            padding: 0 10px;
+        }
+
+        .navbar-nav li a {
+            color: #fff !important;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .moblogo {
+            display: none;
+        }
+
+        @media(max-width: 768px) {
+            .moblogo {
+                display: none;
+
+            }
+            .weblogo{
+                display: none;
+            }
+
+            .navbar {
+                background: #fbac1b !important;
+            }
+
+            .img123 {
+                width: 100%;
+            }
+        }
+        /* about css */
+        .k{
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            line-height:25px ;
+            font-size: 16px;
+            text-align: justify!important;
+        }
+        /* brand css */
+        .m{
+           font-size: 15px;
+           line-height: 35px;
+           letter-spacing: 1px;
+           word-spacing: 2px;
+
+        }
+        /* our team css */
+        .n{
+            padding-top: 0% !important;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            text-align: justify !important;
+            font-size: 16px;
+            line-height: 28px;
+        }
+        /* careers */
+        i{
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            line-height: 25px;
+            font-size: 16px;
+        }
+    
